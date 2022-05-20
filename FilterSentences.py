@@ -30,7 +30,7 @@ for i in range(len(lines)): # article count
     # write to C.txt
     data3_dict = dict()
     data3_dict['date'] = result['date']
-    data3_dict['FilteredSentences'] = FilteredSentences
+    data3_dict['Filtered Sentences'] = FilteredSentences
     with open('C.txt', 'a') as fa:
         fa.write(str(data3_dict) + '\n')
         
@@ -38,12 +38,14 @@ for i in range(len(lines)): # article count
     IsWork = input("Continue new article work? (y/n):")
     while IsWork != "y" and IsWork != "n":
         IsWork = input("(y/n):")
-    if IsWork == 'n':
+    if IsWork == 'y':
+        print('-------------------------------------')
+    else:
         with open('B.txt', 'w') as fw:
             for line in lines[i+1:]:
                 fw.write(str(line) + '\n')
+        print('Update B.txt succeeded.')
         break
-            
                 
             
                 
