@@ -17,15 +17,15 @@ with open('A.txt', 'w') as f:
         # date
         author_div_tag = soup3.find('div',class_='author')
         date = re.search('發佈時間：(.+?) ', str(author_div_tag))
-        data_dict = dict()
-        data_dict['date'] = date.group(1).strip()
+        data1_dict = dict()
+        data1_dict['date'] = date.group(1).strip()
         # article
         article_div_tag = soup3.find('div',class_='article_content')
         article = ''
         for paragraph in article_div_tag.text.split():
-            article += paragraph
-        data_dict['article'] = article
-        f.write(str(data_dict) + '\n')
+            article += paragraph.replace('\'','\"')
+        data1_dict['article'] = article
+        f.write(str(data1_dict) + '\n')
         
         
 
