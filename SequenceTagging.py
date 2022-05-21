@@ -29,7 +29,7 @@ for j in range(len(lines)): # article count
         data4_dict['source'] = source
         data4_dict['type'] = data_type
         data4_dict['date'] = result['date']
-        data4_dict['text'] = [s for s in sentences[i]]
+        data4_dict['text'] = sentences[i]
         data4_dict['tag'] = ['' for s in sentences[i]]
         if need == "n":
             continue
