@@ -12,17 +12,17 @@ for i in range(len(lines)): # article count
     # filter
     sentences = result['Unfiltered Sentences']
     FilteredSentences = []
-    for i in range(len(sentences)):
+    for j in range(len(sentences)):
         print('-------------------------------------')
-        print('sentence', str(i+1))
-        print(sentences[i])
+        print('sentence', str(j+1))
+        print(sentences[j])
 
         need = input("(y/m/n):")
         
         while need != "y" and need != "m" and need != "n":
             need = input("(y/m/n):")
         if need == "y":
-            FilteredSentences.append(sentences[i])
+            FilteredSentences.append(sentences[j])
         elif need == "m":
             filter_s = input("filtered content:")
             FilteredSentences.append(filter_s.strip())
@@ -43,9 +43,11 @@ for i in range(len(lines)): # article count
     else:
         with open('B.txt', 'w') as fw:
             for line in lines[i+1:]:
-                fw.write(str(line) + '\n')
+                fw.write(str(line))
         print('Update B.txt succeeded.')
         break
+    
+
                 
             
                 

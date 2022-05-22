@@ -38,3 +38,6 @@ with open('A.txt', 'r') as fr:
             data2_dict['Unfiltered Sentences'] = ImportantSentences
             fw.write(str(data2_dict) + '\n')
             print('ok')
+            
+            
+            

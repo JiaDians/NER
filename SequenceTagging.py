@@ -1,10 +1,10 @@
 import json
-
+import re
 source = 'TVBS新聞網'
 data_type = '全球'
 sentences = []
 lines = []
-with open('C.txt', 'r') as f1:
+with open('C.txt', 'r', encoding='UTF-8') as f1:
     lines = f1.readlines()
     
 print('Total article count:', len(lines))
@@ -43,7 +43,8 @@ for j in range(len(lines)): # article count
                         print('string not found')
                     else:
                         if instruction_list[0].upper() == 'P':
-                            for pos in sentences[i].find_all(instruction_list[1]):
+                            for match in re.finditer(instruction_list[1], sentences[i]):
+                                pos = match.start()
                                 IsFirstUse = False
                                 for index in range(pos, pos + len(instruction_list[1])):
                                     if data4_dict['tag'][index] == "":
@@ -61,7 +62,8 @@ for j in range(len(lines)): # article count
                                     if data4_dict['tag'][pos + len(instruction_list[1])] == "":
                                         data4_dict['tag'][pos + len(instruction_list[1])] = 'D-PER'
                         elif instruction_list[0].upper() == 'L':         
-                            for pos in sentences[i].find_all(instruction_list[1]):
+                            for match in re.finditer(instruction_list[1], sentences[i]):
+                                pos = match.start()
                                 IsFirstUse = False
                                 for index in range(pos, pos + len(instruction_list[1])):
                                     if data4_dict['tag'][index] == "":
@@ -79,7 +81,8 @@ for j in range(len(lines)): # article count
                                     if data4_dict['tag'][pos + len(instruction_list[1])] == "":
                                         data4_dict['tag'][pos + len(instruction_list[1])] = 'D-LOC'
                         elif instruction_list[0].upper() == 'O':    
-                            for pos in sentences[i].find_all(instruction_list[1]):
+                            for match in re.finditer(instruction_list[1], sentences[i]):
+                                pos = match.start()
                                 IsFirstUse = False
                                 for index in range(pos, pos + len(instruction_list[1])):
                                     if data4_dict['tag'][index] == "":
@@ -97,7 +100,8 @@ for j in range(len(lines)): # article count
                                     if data4_dict['tag'][pos + len(instruction_list[1])] == "":
                                         data4_dict['tag'][pos + len(instruction_list[1])] = 'D-ORG'
                         elif instruction_list[0].upper() == 'D':     
-                            for pos in sentences[i].find_all(instruction_list[1]):
+                            for match in re.finditer(instruction_list[1], sentences[i]):
+                                pos = match.start()
                                 IsFirstUse = False
                                 for index in range(pos, pos + len(instruction_list[1])):
                                     if data4_dict['tag'][index] == "":
@@ -107,7 +111,8 @@ for j in range(len(lines)): # article count
                                         else:
                                             data4_dict['tag'][index] = 'I-Date'
                         elif instruction_list[0].upper() == 'T':
-                            for pos in sentences[i].find_all(instruction_list[1]):
+                            for match in re.finditer(instruction_list[1], sentences[i]):
+                                pos = match.start()
                                 IsFirstUse = False
                                 for index in range(pos, pos + len(instruction_list[1])):
                                     if data4_dict['tag'][index] == "":
