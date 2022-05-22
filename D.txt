@@ -1,7 +1,7 @@
 {'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': '美國駐基輔大使館在關閉近3個月之後', 'tag': ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-Date', 'I-Date', 'I-Date', 'O', 'O']}
 {'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': '18日重新開始運作', 'tag': ['B-Date', 'I-Date', 'I-Date', 'O', 'O', 'O', 'O', 'O', 'O']}
 {'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': '美國參議院並一致通過駐烏克蘭大使人事案', 'tag': ['O', 'U-ORG', 'B-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
-{'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': ['G7財政部長19日開會'], 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'B-Date', 'I-Date', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': 'G7財政部長19日開會', 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'B-Date', 'I-Date', 'O', 'O']}
 {'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': '關閉近3個月後美國重啟駐基輔大使館美國國務卿布林肯（AntonyBlinken）18日表示', 'tag': ['O', 'O', 'B-Date', 'I-Date', 'I-Date', 'I-Date', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'U-PER', 'B-PER', 'I-PER', 'I-PER', 'D-PER', 'B-PER', 'I-PER', 'I-PER', 'I-PER', 'I-PER', 'I-PER', 'I-PER', 'I-PER', 'I-PER', 'I-PER', 'I-PER', 'I-PER', 'I-PER', 'D-PER', 'B-Date', 'I-Date', 'I-Date', 'O', 'O']}
 {'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': '這座大使館曾關閉近3個月之久', 'tag': ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-Date', 'I-Date', 'I-Date', 'O', 'O']}
 {'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': '布林肯發表聲明指出', 'tag': ['B-PER', 'I-PER', 'I-PER', 'D-PER', 'O', 'O', 'O', 'O', 'O']}
