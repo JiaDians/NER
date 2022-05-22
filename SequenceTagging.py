@@ -1,13 +1,14 @@
 import json
 import re
 source = 'TVBS新聞網'
-data_type = '全球'
+data_type = ''
 sentences = []
 lines = []
-with open('C.txt', 'r', encoding='UTF-8') as f1:
+with open('C.txt', 'r') as f1:
     lines = f1.readlines()
     
 print('Total article count:', len(lines))
+data_type = input("please set data type name:")
 for j in range(len(lines)): # article count
     print('article:', str(j+1))
     result = json.loads(lines[j].replace("\'", "\""))
@@ -147,7 +148,7 @@ for j in range(len(lines)): # article count
     else:
         with open('C.txt', 'w') as fw:
             for line in lines[j+1:]:
-                fw.write(str(line) + '\n')
+                fw.write(str(line))
         print('Update C.txt succeeded.')
         break
 

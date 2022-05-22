@@ -90,3 +90,54 @@
 {'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': '拜登出訪前白宮國安顧問蘇利文也與楊潔篪通話', 'tag': ['B-PER', 'I-PER', 'D-PER', 'O', 'U-LOC', 'B-LOC', 'I-LOC', 'D-LOC', 'O', 'O', 'U-PER', 'B-PER', 'I-PER', 'I-PER', 'D-PER', 'U-PER', 'B-PER', 'I-PER', 'I-PER', 'D-PER', 'O']}
 {'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': '楊潔篪特別警告美國別想打台灣牌', 'tag': ['B-PER', 'I-PER', 'I-PER', 'D-PER', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
 {'source': 'TVBS新聞網', 'type': '全球', 'date': '2022/05/19', 'text': '否則只會把台海局勢帶入危險境地', 'tag': ['O', 'O', 'O', 'O', 'U-LOC', 'B-LOC', 'I-LOC', 'D-LOC', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '高雄警方日前處理一場車禍意外', 'tag': ['O', 'O', 'O', 'O', 'B-Date', 'I-Date', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '當事一名林姓女駕駛看到員警神情緊張', 'tag': ['O', 'O', 'O', 'U-PER', 'B-PER', 'D-PER', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '三民派出所員警19日傍晚5點多', 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O', 'B-Date', 'I-Date', 'I-Date', 'B-Time', 'I-Time', 'I-Time', 'I-Time', 'I-Time']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '到中庸街一帶處理交通事故', 'tag': ['U-LOC', 'B-LOC', 'I-LOC', 'I-LOC', 'D-LOC', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '將其解送回高雄地檢署偵辦', 'tag': ['O', 'O', 'O', 'O', 'U-ORG', 'B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '台北市天津街和北平東路口', 'tag': ['O', 'O', 'U-LOC', 'B-LOC', 'I-LOC', 'I-LOC', 'D-LOC', 'B-LOC', 'I-LOC', 'I-LOC', 'I-LOC', 'I-LOC']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '今（22）日早上發生嚴重死亡車禍', 'tag': ['B-Date', 'I-Date', 'I-Date', 'I-Date', 'I-Date', 'I-Date', 'B-Time', 'I-Time', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '楊姓男子騎車載著翁姓女友行經事發地點時', 'tag': ['B-PER', 'D-PER', 'O', 'O', 'O', 'O', 'O', 'U-PER', 'B-PER', 'D-PER', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '發現楊姓男子已經失去呼吸心跳', 'tag': ['O', 'U-PER', 'B-PER', 'D-PER', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '翁姓女友則仍在醫院觀察治療', 'tag': ['B-PER', 'D-PER', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '今（22）日早上接近11點', 'tag': ['B-Date', 'I-Date', 'I-Date', 'I-Date', 'I-Date', 'I-Date', 'B-Time', 'I-Time', 'B-Time', 'I-Time', 'I-Time', 'I-Time', 'I-Time']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '行經天津街時未依照路口號誌', 'tag': ['O', 'U-LOC', 'B-LOC', 'I-LOC', 'I-LOC', 'D-LOC', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '加州台僑教會槍響後台灣長老教會接恐嚇電話揚言攻擊由於撞擊力道過猛', 'tag': ['O', 'U-ORG', 'B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O', 'U-ORG', 'B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '美國南加州長老教會於當地時間5月15日發生槍擊事件', 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O', 'O', 'O', 'O', 'B-Date', 'I-Date', 'I-Date', 'I-Date', 'I-Date', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '這個月18日', 'tag': ['B-Date', 'I-Date', 'I-Date', 'I-Date', 'I-Date', 'I-Date']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '台灣基督長老教會為此召開記者會哀悼、譴責', 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '濟南教會牧師黃春生就說', 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'U-PER', 'B-PER', 'I-PER', 'I-PER', 'D-PER', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '18日上午', 'tag': ['B-Date', 'I-Date', 'I-Date', 'B-Time', 'I-Time']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '台灣基督長老教會和台灣教授協會', 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '警方獲報後到一間汽車美容廠救出被害人', 'tag': ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'U-ORG', 'B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '幾個小時前他才和前妻相約到新竹一間遊藝場打電動', 'tag': ['B-Time', 'I-Time', 'I-Time', 'I-Time', 'I-Time', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '警方六個小時後', 'tag': ['O', 'O', 'B-Time', 'I-Time', 'I-Time', 'I-Time', 'I-Time']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '救出35歲的陳姓男子', 'tag': ['O', 'O', 'B-Date', 'I-Date', 'I-Date', 'U-PER', 'B-PER', 'D-PER', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '張姓女子不滿', 'tag': ['B-PER', 'D-PER', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '北投分局副分局長車宇基', 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O', 'O', 'U-PER', 'B-PER', 'I-PER', 'I-PER']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '移送台灣桃園地方檢察署偵辦', 'tag': ['O', 'U-ORG', 'B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '黃嫌跟許嫌兩人經檢察官訊後', 'tag': ['B-PER', 'D-PER', 'U-PER', 'B-PER', 'D-PER', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '張姓女子犯案後', 'tag': ['B-PER', 'D-PER', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '而且他還在店內逗留20分鐘', 'tag': ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-Time', 'I-Time', 'I-Time', 'I-Time']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '21日下午3點半', 'tag': ['B-Date', 'I-Date', 'I-Date', 'B-Time', 'I-Time', 'I-Time', 'I-Time', 'I-Time']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '茄萣分駐所所長邱善明', 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'U-PER', 'B-PER', 'I-PER', 'I-PER']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '函請地檢署偵辦', 'tag': ['O', 'U-ORG', 'B-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '記者吳宇雅', 'tag': ['O', 'U-PER', 'B-PER', 'I-PER', 'I-PER']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '21日下午兩點多他佯裝成一般客人', 'tag': ['B-Date', 'I-Date', 'I-Date', 'B-Time', 'I-Time', 'I-Time', 'I-Time', 'I-Time', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '員警vs.王姓嫌犯', 'tag': ['O', 'O', 'O', 'O', 'U-PER', 'B-PER', 'D-PER', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '沒想到錢都還沒還不到兩小時就落網', 'tag': ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-Time', 'I-Time', 'I-Time', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '王姓嫌犯已經66歲沒有工作有竊盜前科', 'tag': ['B-PER', 'D-PER', 'O', 'O', 'O', 'O', 'B-Date', 'I-Date', 'I-Date', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '早在案發兩小時前', 'tag': ['O', 'O', 'O', 'O', 'B-Time', 'I-Time', 'I-Time', 'I-Time']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '被他毆打的女店員只有18歲', 'tag': ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-Date', 'I-Date', 'I-Date']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '一週會來幫忙2天', 'tag': ['O', 'O', 'O', 'O', 'O', 'O', 'B-Date', 'I-Date']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '21日下午幫一名女子戴VR裝置時', 'tag': ['B-Date', 'I-Date', 'I-Date', 'B-Time', 'I-Time', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '我在大概在6點多的時候才跟我媽媽講', 'tag': ['O', 'O', 'O', 'O', 'O', 'B-Time', 'I-Time', 'I-Time', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '王小姐在華山藝文特區旁的', 'tag': ['B-PER', 'D-PER', 'O', 'U-LOC', 'B-LOC', 'I-LOC', 'I-LOC', 'I-LOC', 'I-LOC', 'I-LOC', 'D-LOC', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '台北國際藝術村打工', 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '事發在21日下午三點多', 'tag': ['O', 'O', 'O', 'B-Date', 'I-Date', 'I-Date', 'B-Time', 'I-Time', 'I-Time', 'I-Time', 'I-Time']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '她大概就是隔了3秒鐘到5秒鐘', 'tag': ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-Time', 'I-Time', 'I-Time', 'O', 'B-Time', 'I-Time', 'I-Time']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '被害人立刻到台大醫院驗傷', 'tag': ['O', 'O', 'O', 'O', 'O', 'U-ORG', 'B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '屏東墾丁海域發生遊艇故障', 'tag': ['B-LOC', 'I-LOC', 'I-LOC', 'I-LOC', 'I-LOC', 'I-LOC', 'D-LOC', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '21日下午', 'tag': ['B-Date', 'I-Date', 'I-Date', 'B-Time', 'I-Time']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '在墾丁海域享用一下乘風破浪', 'tag': ['U-LOC', 'B-LOC', 'I-LOC', 'I-LOC', 'I-LOC', 'D-LOC', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
+{'source': 'TVBS新聞網', 'type': '社會', 'date': '2022/05/22', 'text': '恆春海巡隊分隊長馮建翰：「船艇可能有破損並有沉船之虞', 'tag': ['B-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'I-ORG', 'D-ORG', 'O', 'U-PER', 'B-PER', 'I-PER', 'I-PER', 'D-PER', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']}
