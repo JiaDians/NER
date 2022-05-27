@@ -1,7 +1,7 @@
 import json
 
 lines = []
-with open('B.txt', 'r') as f1:
+with open('B.txt', 'r', encoding='UTF-8') as f1:
     lines = f1.readlines()
     
 print('Total article count:', len(lines))
@@ -41,7 +41,7 @@ for i in range(len(lines)): # article count
     if IsWork == 'y':
         print('-------------------------------------')
     else:
-        with open('B.txt', 'w') as fw:
+        with open('B.txt', 'w', encoding='UTF-8') as fw:
             for line in lines[i+1:]:
                 fw.write(str(line))
         print('Update B.txt succeeded.')

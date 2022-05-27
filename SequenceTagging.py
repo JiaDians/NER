@@ -1,20 +1,21 @@
 import json
 import re
+
 source = 'TVBS新聞網'
 data_type = ''
 sentences = []
 lines = []
-with open('C.txt', 'r') as f1:
+with open('B.txt', 'r', encoding='utf-8-sig') as f1:
     lines = f1.readlines()
-    
+
 print('Total article count:', len(lines))
 data_type = input("please set data type name:")
 for j in range(len(lines)): # article count
     print('article:', str(j+1))
     result = json.loads(lines[j].replace("\'", "\""))
-    print('Total Filtered Sentences:', len(result['Filtered Sentences']))
+    print('Total Filtered Sentences:', len(result['Sentences']))
     # Tagging
-    sentences = result['Filtered Sentences']
+    sentences = result['Sentences']
     SentenceTag = []
     for i in range(len(sentences)):
         print('-------------------------------------')
@@ -107,10 +108,10 @@ for j in range(len(lines)): # article count
                                 for index in range(pos, pos + len(instruction_list[1])):
                                     if data4_dict['tag'][index] == "":
                                         if IsFirstUse == False:
-                                            data4_dict['tag'][index] = 'B-Date'
+                                            data4_dict['tag'][index] = 'B-DATE'
                                             IsFirstUse = True
                                         else:
-                                            data4_dict['tag'][index] = 'I-Date'
+                                            data4_dict['tag'][index] = 'I-DATE'
                         elif instruction_list[0].upper() == 'T':
                             for match in re.finditer(instruction_list[1], sentences[i]):
                                 pos = match.start()
@@ -118,10 +119,10 @@ for j in range(len(lines)): # article count
                                 for index in range(pos, pos + len(instruction_list[1])):
                                     if data4_dict['tag'][index] == "":
                                         if IsFirstUse == False:
-                                            data4_dict['tag'][index] = 'B-Time'
+                                            data4_dict['tag'][index] = 'B-TIME'
                                             IsFirstUse = True
                                         else:
-                                            data4_dict['tag'][index] = 'I-Time'
+                                            data4_dict['tag'][index] = 'I-TIME'
                         else:
                             pass
                 else:
@@ -136,7 +137,7 @@ for j in range(len(lines)): # article count
             
             # write to D.txt
             
-            with open('D.txt', 'a') as fa:
+            with open('C.txt', 'a') as fa:
                 fa.write(str(data4_dict) + '\n')
             
     # Continue new article work?
@@ -146,10 +147,10 @@ for j in range(len(lines)): # article count
     if IsWork == 'y':
         print('-------------------------------------')
     else:
-        with open('C.txt', 'w') as fw:
+        with open('B.txt', 'w') as fw:
             for line in lines[j+1:]:
                 fw.write(str(line))
-        print('Update C.txt succeeded.')
+        print('Update B.txt succeeded.')
         break
 
                 
