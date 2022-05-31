@@ -7,8 +7,13 @@ url1 = 'https://news.tvbs.com.tw/world' # 全球
 url2 = 'https://news.tvbs.com.tw/local' # 社會
 
 
-def GetData(date):
-    web = requests.get(url2)    # set url
+def GetData(date,type_name):
+    if type_name == '全球':
+        web = requests.get(url1)   
+    elif type_name == '社會':
+        web = requests.get(url2)   
+    else:
+        return 
     soup = BeautifulSoup(web.text, 'html.parser')
     news_now2_div_tag = soup.find('div',class_='news_now2')
     soup2 = BeautifulSoup(str(news_now2_div_tag), 'html.parser')
@@ -51,16 +56,13 @@ def GetData(date):
             f.write(str(data1_dict) + '\n', )
             
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 3:
         print('no argument')
         sys.exit()
-    print('hello')
-    print(sys.argv[0])
-    print(sys.argv[1])
     DateRegex = re.compile(r'\d\d\d\d/\d\d/\d\d')
-    result = DateRegex.findall(sys.argv[1])
+    result = DateRegex.findall(sys.argv[2])
     if len(result) == 1:
-        GetData(result[0])
+        GetData(result[0],sys.argv[1])
     else:
         print('wrong parameter format')
         
