@@ -5,9 +5,17 @@ source = 'TVBS新聞網'
 data_type = ''
 sentences = []
 lines = []
-with open('B.txt', 'r', encoding='utf-8-sig') as f1:
-    lines = f1.readlines()
 
+isEncoding = input('Use encoding? (y/n)')
+if isEncoding == 'y':
+    with open('B.txt', 'r', encoding='utf-8') as f1:
+        lines = f1.readlines()
+elif isEncoding == 'n':
+    with open('B.txt', 'r') as f1:
+        lines = f1.readlines()
+else:
+    exit()
+    
 print('Total article count:', len(lines))
 data_type = input("please set data type name:")
 for j in range(len(lines)): # article count
