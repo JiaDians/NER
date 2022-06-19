@@ -60,17 +60,9 @@ for j in range(len(lines)): # article count
                                     if data4_dict['tag'][index] == "":
                                         if IsFirstUse == False:
                                             data4_dict['tag'][index] = 'B-PER'
-                                            # Insert U-PER
-                                            if (index-1) >= 0:
-                                                if data4_dict['tag'][index-1] == "":
-                                                    data4_dict['tag'][index-1] = 'U-PER'
                                             IsFirstUse = True
                                         else:
                                             data4_dict['tag'][index] = 'I-PER'
-                                # Insert D-PER
-                                if pos + len(instruction_list[1]) < len(sentences[i]):
-                                    if data4_dict['tag'][pos + len(instruction_list[1])] == "":
-                                        data4_dict['tag'][pos + len(instruction_list[1])] = 'D-PER'
                         elif instruction_list[0].upper() == 'L':         
                             for match in re.finditer(instruction_list[1], sentences[i]):
                                 pos = match.start()
@@ -79,17 +71,9 @@ for j in range(len(lines)): # article count
                                     if data4_dict['tag'][index] == "":
                                         if IsFirstUse == False:
                                             data4_dict['tag'][index] = 'B-LOC'
-                                            # Insert U-LOC
-                                            if (index-1) >= 0:
-                                                if data4_dict['tag'][index-1] == "":
-                                                    data4_dict['tag'][index-1] = 'U-LOC'
                                             IsFirstUse = True
                                         else:
                                             data4_dict['tag'][index] = 'I-LOC'
-                                # Insert D-LOC
-                                if pos + len(instruction_list[1]) < len(sentences[i]):
-                                    if data4_dict['tag'][pos + len(instruction_list[1])] == "":
-                                        data4_dict['tag'][pos + len(instruction_list[1])] = 'D-LOC'
                         elif instruction_list[0].upper() == 'O':    
                             for match in re.finditer(instruction_list[1], sentences[i]):
                                 pos = match.start()
@@ -98,17 +82,9 @@ for j in range(len(lines)): # article count
                                     if data4_dict['tag'][index] == "":
                                         if IsFirstUse == False:
                                             data4_dict['tag'][index] = 'B-ORG'
-                                            # Insert U-ORG
-                                            if (index-1) >= 0:
-                                                if data4_dict['tag'][index-1] == "":
-                                                    data4_dict['tag'][index-1] = 'U-ORG'
                                             IsFirstUse = True
                                         else:
                                             data4_dict['tag'][index] = 'I-ORG'
-                                # Insert D-ORG
-                                if pos + len(instruction_list[1]) < len(sentences[i]):
-                                    if data4_dict['tag'][pos + len(instruction_list[1])] == "":
-                                        data4_dict['tag'][pos + len(instruction_list[1])] = 'D-ORG'
                         elif instruction_list[0].upper() == 'D':     
                             for match in re.finditer(instruction_list[1], sentences[i]):
                                 pos = match.start()
