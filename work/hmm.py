@@ -73,7 +73,7 @@ class HMM_Model:
         ans_list = []
         for i in range(T):
             ans_list.append([Obs_s[i],self.id2tag[path[i]]])
-            print(ans_list[i][0], ans_list[i][1])
+            # print(ans_list[i][0], ans_list[i][1])
         return ans_list
     
     def predict_list(self,Obs_l):
@@ -95,7 +95,7 @@ class HMM_Model:
 
 def main():
     model = HMM_Model()
-    with open('./data/data.txt', mode='r', encoding='utf-8') as f:
+    with open('./data/training_data.txt', mode='r', encoding='utf-8') as f:
         data = f.read()           
     data = eval(data)  
     # data = [["str",[tag]],["str",[tag]]...,["str",[tag]]]
@@ -119,9 +119,9 @@ def main():
     print()
     print("Accuracy =", accuracy, "%")
     s = '黃婦於11日下午9時21分往杉林大橋'
-    path = model.predict_sentence(s)
+    ans_list = model.predict_sentence(s)
 
-    return path
+    return ans_list
 
 if __name__ == '__main__':
     ans_list = main()
