@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- script  -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    function submitForm() {
+        let formElement = document.getElementById('myForm');
+        let article = new FormData(formElement);
+        fetch('/submit', {
+            method: 'POST',
+            body: article,
+        }).then(function(response){
+            response.json().then(function(data) {
+            let PER_text = ""
+            let ORG_text = ""
+            let LOC_text = ""
+            let DATE_text = ""
+            let TIME_text = ""
+            let info_text = "";
+            for (let i = 0; i < data["record"].length; i++) {
+              info_text += "【" + data["record"][i]["sentence"] + "】" + "\n";
+              for (let j = 0; j < data["record"][i]["entitys"].length; j++) {
+                  info_text += "（";
+                  info_text += data["record"][i]["entitys"][j]["tag"];
+                  info_text += "，";
+                  info_text += data["record"][i]["entitys"][j]["entity"];
+                  info_text += "）";
+                  info_text += "\n";
+                  switch (data["record"][i]["entitys"][j]["tag"]) {
+                    case "PER":
+                      PER_text += data["record"][i]["entitys"][j]["entity"] + "<br>"
+                    break;
+                    case "ORG":
+                      ORG_text += data["record"][i]["entitys"][j]["entity"] + "<br>"
+                    break;  
+                    case "LOC":
+                      LOC_text += data["record"][i]["entitys"][j]["entity"] + "<br>"
+                    break;
+                    case "DATE":
+                      DATE_text += data["record"][i]["entitys"][j]["entity"] + "<br>"
+                    break;
+                    case "TIME":
+                      TIME_text += data["record"][i]["entitys"][j]["entity"] + "<br>"
+                    break;
+                    default:
+                  }
+              }
+              info_text += "\n";
+            }
+            document.getElementById("responseArea1").innerHTML = info_text;
+            document.getElementById("responseArea2").innerHTML = PER_text;
+            document.getElementById("responseArea3").innerHTML = ORG_text;
+            document.getElementById("responseArea4").innerHTML = LOC_text;
+            document.getElementById("responseArea5").innerHTML = DATE_text;
+            document.getElementById("responseArea6").innerHTML = TIME_text;
+            });
+        }).catch(function(error) {
+            console.log('Fetch Error:', error);
+        });
+    }
+    </script>
+    <title>NER home</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 1 -->
+      <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1 style="font-family: Rockwell;">NER</h1>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" >
+          <form method="post" id="myForm">
+              <div class="text-center">
+                  <label for="article" class="form-control bg-dark bg-gradient text-white">Article</label>
+                  <textarea type="text" class="form-control" rows="12" name="article" id="article"></textarea>
+              </div>
+              <div class="text-center" style="height: 80px;">
+                  <input type="button" class="btn btn-secondary btn-gradient text-white" value="Run" onclick="submitForm()">
+              </div> 
+          </form>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+      <!-- 3 -->
+      <div class="row">
+        <div class="col-sm-6">
+          <textarea type="text" class="form-control" rows="12" name="article" id="responseArea1"></textarea>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header text-center bg-primary bg-gradient text-white">PER</div>
+                <div class="card-body" id="responseArea2"></div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center bg-danger bg-gradient text-white">ORG</div>
+                <div class="card-body" id="responseArea3"></div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center bg-success bg-gradient text-white">LOC</div>
+                <div class="card-body" id="responseArea4"></div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center bg-warning bg-gradient text-white">DATE</div>
+                <div class="card-body" id="responseArea5"></div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center bg-dark bg-gradient text-white">TIME</div>
+                <div class="card-body" id="responseArea6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
