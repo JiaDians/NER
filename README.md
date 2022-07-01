@@ -9,7 +9,7 @@ docker run -d --name nercontainer -p 80:80 nerimage
 ```
 Go to the following URL.<br>
 ```
-http://127.0.0.1/home
+http://127.0.0.1:80/home
 ```
 You will see the following display.
 
