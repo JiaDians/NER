@@ -13,9 +13,7 @@ http://127.0.0.1:80/home
 ```
 You will see the following display.
 
-![miss](./image/demo1.png)
-
-![miss](./image/demo2.png)
+![miss](./image/demo3.png)
 
 ## Model Details
 This project uses **Hidden Markov Models** and **Viterbi algorithm** to derive optimal paths.
