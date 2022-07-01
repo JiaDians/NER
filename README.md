@@ -1,7 +1,7 @@
 # NER
-## 過程
-1. 爬蟲 -> NewsTvbsSpider.py -> A.txt
-2. 斷句抽取 -> SentenceSegmentation.py -> B.txt
-3. 標註 -> SequenceTagging.py -> C.txt
+![image is missing](image/title.png)
+## Usage
+docker build -t nerimage .
+docker run -d --name nercontainer -p 80:80 nerimage
 
 
