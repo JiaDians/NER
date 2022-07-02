@@ -4,8 +4,8 @@
 You can run this program using [docker](https://www.docker.com/).
 
 ```
-docker pull jiadian/nerimage
-docker run -p 80:80 jiadian/nerimage
+docker pull jiadian/cner
+docker run -p 80:80 jiadian/cner
 ```
 Go to the following URL.<br>
 ```
