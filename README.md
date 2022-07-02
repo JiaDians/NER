@@ -4,12 +4,12 @@
 You can run this program using [docker](https://www.docker.com/).
 
 ```
-docker build -t nerimage .
-docker run -d --name nercontainer -p 80:80 nerimage
+docker pull jiadian/nerimage
+docker run -p 80:80 jiadian/nerimage
 ```
 Go to the following URL.<br>
 ```
-http://127.0.0.1:80/home
+http://localhost/home
 ```
 You will see the following display.
 
