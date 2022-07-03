@@ -1,5 +1,7 @@
-# NER
 ![miss](image/title.png)
+# NER
+![visitors](https://visitor-badge.glitch.me/badge?page_id=JiaDians.NER&left_color=red&right_color=green)
+[![GitHub stars](https://badgen.net/github/stars/JiaDians/NER)](https://GitHub.com/JiaDians/NER)
 ## Usage
 You can run this program using [docker](https://www.docker.com/).
 
